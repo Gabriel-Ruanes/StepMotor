@@ -8,8 +8,12 @@
 #include"config.h"
 #include <xc.h>
 #include"delay.h"
+#include "StepMotor.h"
+
+
 
 void main(void) 
 {
-    return;
+    StepMotor_init();
+    giro();
 }
