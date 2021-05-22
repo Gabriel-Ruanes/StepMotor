@@ -1,26 +1,40 @@
-[p LITE_MODE AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
 [d version 1.1 ]
 [d edition pro ]
 [d chip 16F887 ]
-[d frameptr 6 ]
-"10 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\sprcadd.c
+[d frameptr 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
-"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul8_16.c
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul8_16.c
 [v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
-"6 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\pic\__eeprom.c
+"6 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\pic\__eeprom.c
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"13 C:\Users\21192694\MPLABXProjects\StepMotor\StepMotor.X\delay.c
+"13 C:\Users\Gabriel Ruanes\MPLABXProjects\StepMotor\StepMotor.X\delay.c
 [v _delay delay `(v  1 e 1 0 ]
-"15 C:\Users\21192694\MPLABXProjects\StepMotor\StepMotor.X\main.c
+"18 C:\Users\Gabriel Ruanes\MPLABXProjects\StepMotor\StepMotor.X\main.c
 [v _main main `(v  1 e 1 0 ]
-"17 C:\Users\21192694\MPLABXProjects\StepMotor\StepMotor.X\StepMotor.c
+"23 C:\Users\Gabriel Ruanes\MPLABXProjects\StepMotor\StepMotor.X\StepMotor.c
 [v _StepMotor_init StepMotor_init `(v  1 e 1 0 ]
-"22
-[v _giro giro `(v  1 e 1 0 ]
-"352 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f887.h
-[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"29
+[v _botao_S1 botao_S1 `(uc  1 e 1 0 ]
+"34
+[v _botao_S2 botao_S2 `(uc  1 e 1 0 ]
+"39
+[v _StepMotor StepMotor `(v  1 e 1 0 ]
+[s S66 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"245 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
+[u S75 . 1 `S66 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES75  1 e 1 @6 ]
 [s S45 . 1 `uc 1 RD0 1 0 :1:0 
 `uc 1 RD1 1 0 :1:1 
 `uc 1 RD2 1 0 :1:2 
@@ -33,28 +47,40 @@
 "369
 [u S54 . 1 `S45 1 . 1 0 ]
 [v _PORTDbits PORTDbits `VES54  1 e 1 @8 ]
-"1602
-[v _TRISD TRISD `VEuc  1 e 1 @136 ]
-"15 C:\Users\21192694\MPLABXProjects\StepMotor\StepMotor.X\main.c
+"1478
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"3449
+[v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
+"18 C:\Users\Gabriel Ruanes\MPLABXProjects\StepMotor\StepMotor.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"19
+"22
 } 0
-"22 C:\Users\21192694\MPLABXProjects\StepMotor\StepMotor.X\StepMotor.c
-[v _giro giro `(v  1 e 1 0 ]
+"23 C:\Users\Gabriel Ruanes\MPLABXProjects\StepMotor\StepMotor.X\StepMotor.c
+[v _StepMotor_init StepMotor_init `(v  1 e 1 0 ]
 {
-"24
-[v giro@estado estado `uc  1 a 1 5 ]
-"59
+"27
 } 0
-"13 C:\Users\21192694\MPLABXProjects\StepMotor\StepMotor.X\delay.c
+"39
+[v _StepMotor StepMotor `(v  1 e 1 0 ]
+{
+"41
+[v StepMotor@estado estado `uc  1 a 1 5 ]
+"126
+} 0
+"13 C:\Users\Gabriel Ruanes\MPLABXProjects\StepMotor\StepMotor.X\delay.c
 [v _delay delay `(v  1 e 1 0 ]
 {
 [v delay@t t `ui  1 p 2 0 ]
 "20
 } 0
-"17 C:\Users\21192694\MPLABXProjects\StepMotor\StepMotor.X\StepMotor.c
-[v _StepMotor_init StepMotor_init `(v  1 e 1 0 ]
+"34 C:\Users\Gabriel Ruanes\MPLABXProjects\StepMotor\StepMotor.X\StepMotor.c
+[v _botao_S2 botao_S2 `(uc  1 e 1 0 ]
 {
-"21
+"37
+} 0
+"29
+[v _botao_S1 botao_S1 `(uc  1 e 1 0 ]
+{
+"32
 } 0

@@ -1,6 +1,9 @@
 /*
  * File:   main.c
- * Author: 21192694
+ * Author:  Grupo 4 (G4)
+ *          -Davi Melo;
+ *          -Gabriel Ruanes;
+ *          -Marco Antonio. 
  *
  * Created on 20 de Maio de 2021, 14:15
  */
@@ -15,5 +18,5 @@
 void main(void) 
 {
     StepMotor_init();
-    giro();
+    StepMotor();
 }
